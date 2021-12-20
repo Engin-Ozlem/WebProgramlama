@@ -9,13 +9,21 @@ using System.Threading.Tasks;
 
 namespace OrnekSite.DataAccess.Repository
 {
-    public class ApplicationUserRepository : Repository<ApplicationUser>, IApplicationUserRepository
+    public class CategoryRepository : Repository<Category>, ICategoryRepository
     {
         private readonly ApplicationDbContext _db;
-        public ApplicationUserRepository(ApplicationDbContext db) : base(db)
+        public CategoryRepository(ApplicationDbContext db) : base(db)
         {
             _db = db;
         }
-        
+        public void Update(Category category)
+        {
+            var nesne = _db.Categories.FirstOrDefault(i => i.Id == category.Id);
+            if (nesne != null)
+            {
+                nesne.Name = category.Name;
+                _db.SaveChanges();
+            }
+        }
     }
 }

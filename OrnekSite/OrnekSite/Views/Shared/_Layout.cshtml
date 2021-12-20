@@ -1,4 +1,6 @@
-﻿@using OrnekSite.Diger
+﻿@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
+@using OrnekSite.Diger
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -25,16 +27,38 @@
                     <ul class="navbar-nav flex-grow-1">
                         @if (User.IsInRole(SD.Role_Admin)) // SADECE ADMİN OLAN KİŞİLER BU LİNKLERİ GÖRÜCEKTİR
                         {
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Kategoriler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Ürünler</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" asp-area="Admin" asp-controller="User" asp-action="Index">Kullanıcılar</a>
-                        </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="Category" asp-action="Index">Kategoriler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="Product" asp-action="Index">Ürünler</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" asp-area="Admin" asp-controller="User" asp-action="Index">Kullanıcılar</a>
+                            </li>
                         }
+                        @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.ssShoppingCart) != null)
+                        {
+                            <li style="color:white">
+                                <a asp-area="Customer" asp-controller="Cart" asp-action="Index" class="nav-link">
+                                    @{
+                                        var count = HttpContextAccessor.HttpContext.Session.GetInt32(SD.ssShoppingCart);
+                                    }
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;(@count) <!--sepetteki ürün sayısı gelicektir-->
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li style="color:white">
+                                <a href="/Identity/Account/Login" class="nav-link">
+                                    
+                                    <i class="fas fa-shopping-cart"></i>&nbsp;(0) <!--sepette ürün yok ise 0 gelicektir-->
+                                </a>
+                            </li>
+
+                        }
+
                     </ul>
                     <partial name="_LoginPartial" />
                 </div>

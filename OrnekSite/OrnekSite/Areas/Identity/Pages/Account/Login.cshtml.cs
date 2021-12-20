@@ -11,6 +11,9 @@ using Microsoft.AspNetCore.Identity.UI.Services;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Microsoft.Extensions.Logging;
+using OrnekSite.DataAccess.Repository.IRepository;
+using Microsoft.AspNetCore.Http;
+using OrnekSite.Diger;
 
 namespace OrnekSite.Areas.Identity.Pages.Account
 {
@@ -20,14 +23,17 @@ namespace OrnekSite.Areas.Identity.Pages.Account
         private readonly UserManager<IdentityUser> _userManager;
         private readonly SignInManager<IdentityUser> _signInManager;
         private readonly ILogger<LoginModel> _logger;
+        private readonly IUnitOfWork _unitOfWork;
 
         public LoginModel(SignInManager<IdentityUser> signInManager, 
             ILogger<LoginModel> logger,
-            UserManager<IdentityUser> userManager)
+            UserManager<IdentityUser> userManager,
+            IUnitOfWork unitOfWork)
         {
             _userManager = userManager;
             _signInManager = signInManager;
             _logger = logger;
+            _unitOfWork = unitOfWork;
         }
 
         [BindProperty]
@@ -84,6 +90,9 @@ namespace OrnekSite.Areas.Identity.Pages.Account
                 var result = await _signInManager.PasswordSignInAsync(Input.Email, Input.Password, Input.RememberMe, lockoutOnFailure: false);
                 if (result.Succeeded)
                 {
+                    var user = _unitOfWork.ApplicationUser.GetFirstOrDefault(i => i.Email == Input.Email);
+                    int count = _unitOfWork.ShoppingCart.GetAll(i => i.ApplicationUserId == user.Id).Count();// email adresine göre kullanıcıyı buluyoruz
+                    HttpContext.Session.SetInt32(SD.ssShoppingCart, count);
                     _logger.LogInformation("User logged in.");
                     return LocalRedirect(returnUrl);
                 }

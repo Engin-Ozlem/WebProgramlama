@@ -58,6 +58,12 @@ namespace OrnekSite
                 option.ClientId = "391755803660-4rjdrb3ufggm11hgkur3465i9glsl0s4.apps.googleusercontent.com";
                 option.ClientSecret = "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";
             });
+            services.AddSession(option =>
+            {
+                option.IdleTimeout = TimeSpan.FromMinutes(30); // 30 dk sonra oturum kapanýcaktýr 
+                option.Cookie.HttpOnly = true;
+                option.Cookie.IsEssential = true;
+            });
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -78,6 +84,7 @@ namespace OrnekSite
             app.UseStaticFiles();
 
             app.UseRouting();
+            app.UseSession();
 
             app.UseAuthentication();
             app.UseAuthorization();

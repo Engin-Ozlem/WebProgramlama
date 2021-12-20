@@ -12,6 +12,9 @@ namespace OrnekSite.DataAccess.Repository.IRepository
         ISP_Call SP_Call { get; }
         IProductRepository Product { get; }
         IApplicationUserRepository ApplicationUser { get; }
+        IShoppingCartRepository ShoppingCart { get; }
+        IOrderHeaderRepository OrderHeader { get; }
+        IOrderDetailsRepository OrderDetails { get; }
         void Save();
     }
 }

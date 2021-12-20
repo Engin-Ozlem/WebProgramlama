@@ -11,5 +11,7 @@ namespace OrnekSite.Diger
         public const string Role_Birey = "Birey"; // ilk değişken sayfanın gerçek sahibidir 
         public const string Role_Admin = "Admin";
         public const string Role_User = "User";
+
+        public const string ssShoppingCart = "Shoppping Cart Session";
     }
 }

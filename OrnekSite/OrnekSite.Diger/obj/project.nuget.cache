@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "wNtdW/B+Yv2oVRVnOYPUkd+mlfWnMaRNa1OfyJVx+RDVob33iEtgX47wh4cxIb84kYhS0bHBSsu654IgWs5zcg==",
+  "dgSpecHash": "VnIDDv7EFo3xqWv1GgVHoDKaGTnxPpjszzWw1LU5GKIDOLEzBChljyvrYZNSBNzegwoX8KMePhjO4KhOLak5pA==",
   "success": true,
   "projectFilePath": "C:\\Users\\engin\\Desktop\\OrnekSite\\OrnekSite.Diger\\OrnekSite.Diger.csproj",
   "expectedPackageFiles": [
@@ -17,7 +17,8 @@
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.extensions.logging\\5.0.0\\microsoft.extensions.logging.5.0.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\5.0.0\\microsoft.extensions.logging.abstractions.5.0.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.extensions.options\\5.0.0\\microsoft.extensions.options.5.0.0.nupkg.sha512",
-    "C:\\Users\\engin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512"
+    "C:\\Users\\engin\\.nuget\\packages\\microsoft.extensions.primitives\\5.0.0\\microsoft.extensions.primitives.5.0.0.nupkg.sha512",
+    "C:\\Users\\engin\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512"
   ],
   "logs": []
 }

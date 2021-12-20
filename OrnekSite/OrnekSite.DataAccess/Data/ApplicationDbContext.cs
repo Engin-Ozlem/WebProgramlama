@@ -13,8 +13,11 @@ namespace OrnekSite.DataAccess.Data
             : base(options)
         {
         }
-        public DbSet<Category> Categories { get; set; }
+        public DbSet<Category> Categories { get; set; } // Category isminde veritabanında tablo oluşur
         public DbSet<Product> Products { get; set; }
         public DbSet<ApplicationUser> ApplicationUsers { get; set; }
+        public DbSet<ShoppingCart> ShoppingCarts { get; set; }
+        public DbSet<OrderHeader> OrderHeaders { get; set; }
+        public DbSet<OrderDetails> OrderDetails { get; set; }
     }
 }

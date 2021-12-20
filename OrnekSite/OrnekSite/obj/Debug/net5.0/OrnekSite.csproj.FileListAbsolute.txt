@@ -954,3 +954,5 @@ C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Identity
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\User\Index.cshtml.g.cs
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Facebook.dll
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
