@@ -11,6 +11,18 @@
           "lib/net5.0/Dapper.dll": {}
         }
       },
+      "Iyzipay/2.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
         "type": "package",
         "dependencies": {
@@ -2682,6 +2694,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Identity.UI": "5.0.1",
           "Newtonsoft.Json": "13.0.1"
         },
@@ -2696,6 +2709,7 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v5.0",
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.Extensions.Identity.Stores": "5.0.1",
           "Newtonsoft.Json": "13.0.1"
@@ -2726,6 +2740,20 @@
         "lib/net5.0/Dapper.xml",
         "lib/netstandard2.0/Dapper.dll",
         "lib/netstandard2.0/Dapper.xml"
+      ]
+    },
+    "Iyzipay/2.1.39": {
+      "sha512": "e3NdsIBQuEWMfPHY5hqIorHqP5tldHwNSztdxwKKVgUe/ajtGlYFTthfdMARk4mkHkclvTsz4DI/V7xs3xJwJg==",
+      "type": "package",
+      "path": "iyzipay/2.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iyzipay.2.1.39.nupkg.sha512",
+        "iyzipay.nuspec",
+        "lib/net45/Iyzipay.dll",
+        "lib/netstandard1.3/Iyzipay.dll",
+        "lib/netstandard2.0/Iyzipay.dll"
       ]
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -8618,6 +8646,7 @@
   "projectFileDependencyGroups": {
     "net5.0": [
       "Dapper >= 2.0.123",
+      "Iyzipay >= 2.1.39",
       "Microsoft.AspNetCore.Identity.EntityFrameworkCore >= 5.0.11",
       "Microsoft.EntityFrameworkCore.Relational >= 5.0.11",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.11",
@@ -8675,6 +8704,10 @@
           "Dapper": {
             "target": "Package",
             "version": "[2.0.123, )"
+          },
+          "Iyzipay": {
+            "target": "Package",
+            "version": "[2.1.39, )"
           },
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
             "target": "Package",

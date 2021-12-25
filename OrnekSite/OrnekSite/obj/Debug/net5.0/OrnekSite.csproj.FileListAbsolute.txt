@@ -956,3 +956,8 @@ C:\Users\engin\Desktop\OrnekSite\OrnekSite\bin\Debug\net5.0\Microsoft.AspNetCore
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\bin\Debug\net5.0\Microsoft.AspNetCore.Authentication.Google.dll
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Details.cshtml.g.cs
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Index.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\Summary.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Cart\SiparisTamam.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\bin\Debug\net5.0\Iyzipay.dll
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Order\Index.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Order\Details.cshtml.g.cs

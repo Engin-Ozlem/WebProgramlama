@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "m0na3VCaRkGUY/bED8cZzxxQSvU+Rrxpq4ZIIUsMQ4lPXQyKUA0jj3iGDmemNKdPvltZN6wrCQcXf/9dJZxruA==",
+  "dgSpecHash": "WDTF7WlO7k/bwq9o2hL8MZ9rz/BAUd+ftao33mHGCaTxxS1Me4ycb5S68Cp9FuNE9KgUv7O+UqkySdrZyxmvxQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\engin\\Desktop\\OrnekSite\\OrnekSite\\OrnekSite.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\engin\\.nuget\\packages\\dapper\\2.0.123\\dapper.2.0.123.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\humanizer.core\\2.8.26\\humanizer.core.2.8.26.nupkg.sha512",
+    "C:\\Users\\engin\\.nuget\\packages\\iyzipay\\2.1.39\\iyzipay.2.1.39.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

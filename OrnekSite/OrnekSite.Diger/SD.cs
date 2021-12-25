@@ -13,5 +13,9 @@ namespace OrnekSite.Diger
         public const string Role_User = "User";
 
         public const string ssShoppingCart = "Shoppping Cart Session";
+
+        public const string Durum_Beklemede = "Beklemede";
+        public const string Durum_Onaylandı = "Onaylandı";
+        public const string Durum_Kargoda = "Kargoya Verildi";
     }
 }

@@ -9,6 +9,7 @@
       "OrnekSite.DataAccess/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.123",
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.11",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.11",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.11",
@@ -25,6 +26,17 @@
           "lib/net5.0/Dapper.dll": {
             "assemblyVersion": "2.0.0.0",
             "fileVersion": "2.0.123.33578"
+          }
+        }
+      },
+      "Iyzipay/2.1.39": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {
+            "assemblyVersion": "2.1.39.0",
+            "fileVersion": "2.1.39.0"
           }
         }
       },
@@ -1584,6 +1596,7 @@
       },
       "OrnekSite.Diger/1.0.0": {
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Identity.UI": "5.0.1",
           "Newtonsoft.Json": "13.0.1"
         },
@@ -1593,6 +1606,7 @@
       },
       "OrnekSite.Models/1.0.0": {
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.Extensions.Identity.Stores": "5.0.11",
           "Newtonsoft.Json": "13.0.1"
@@ -1615,6 +1629,13 @@
       "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
       "path": "dapper/2.0.123",
       "hashPath": "dapper.2.0.123.nupkg.sha512"
+    },
+    "Iyzipay/2.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e3NdsIBQuEWMfPHY5hqIorHqP5tldHwNSztdxwKKVgUe/ajtGlYFTthfdMARk4mkHkclvTsz4DI/V7xs3xJwJg==",
+      "path": "iyzipay/2.1.39",
+      "hashPath": "iyzipay.2.1.39.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "type": "package",

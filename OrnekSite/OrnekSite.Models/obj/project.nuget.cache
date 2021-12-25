@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "5p0bn0xDb9/35HuvopS7xR2cdm/OUxdtGd3xsEIOyDb4TksE0uOdgFNubPidtz0LWUds+rFAxpxDzblbanIjKQ==",
+  "dgSpecHash": "5v+ptQF6VubODkSy+mOv7aDihlRR54G4OCbP0fJb40OV5NB88E5gKMz9UVGDRN6tvFw8HT4Yq6wpyTUHMa/VSQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\engin\\Desktop\\OrnekSite\\OrnekSite.Models\\OrnekSite.Models.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\engin\\.nuget\\packages\\iyzipay\\2.1.39\\iyzipay.2.1.39.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.antiforgery\\2.2.0\\microsoft.aspnetcore.antiforgery.2.2.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.authentication.abstractions\\2.2.0\\microsoft.aspnetcore.authentication.abstractions.2.2.0.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.authentication.core\\2.2.0\\microsoft.aspnetcore.authentication.core.2.2.0.nupkg.sha512",

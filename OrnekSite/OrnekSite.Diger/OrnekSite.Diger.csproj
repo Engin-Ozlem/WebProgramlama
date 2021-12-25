@@ -5,6 +5,7 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="Iyzipay" Version="2.1.39" />
     <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="5.0.1" />
     <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
   </ItemGroup>

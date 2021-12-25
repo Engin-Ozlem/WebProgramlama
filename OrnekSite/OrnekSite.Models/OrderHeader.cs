@@ -34,5 +34,15 @@ namespace OrnekSite.Models
         public string Sehir { get; set; }
         [Required]
         public string PostaKodu { get; set; }
+        [Required]
+        public string CartName { get; set; }
+        [Required]
+        public string CartNumber { get; set; }
+        [Required]
+        public string ExpirationMonth { get; set; }
+        [Required]
+        public string ExpirationYear { get; set; }
+        [Required]
+        public string Cvc { get; set; }
     }
 }

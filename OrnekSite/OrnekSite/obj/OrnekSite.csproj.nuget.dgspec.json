@@ -51,6 +51,10 @@
               "target": "Package",
               "version": "[2.0.123, )"
             },
+            "Iyzipay": {
+              "target": "Package",
+              "version": "[2.1.39, )"
+            },
             "Microsoft.AspNetCore.Identity.EntityFrameworkCore": {
               "target": "Package",
               "version": "[5.0.11, )"
@@ -123,6 +127,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Iyzipay": {
+              "target": "Package",
+              "version": "[2.1.39, )"
+            },
             "Microsoft.AspNetCore.Identity.UI": {
               "target": "Package",
               "version": "[5.0.1, )"
@@ -187,6 +195,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Iyzipay": {
+              "target": "Package",
+              "version": "[2.1.39, )"
+            },
             "Microsoft.AspNetCore.Mvc.ViewFeatures": {
               "target": "Package",
               "version": "[2.2.0, )"
@@ -265,6 +277,10 @@
         "net5.0": {
           "targetAlias": "net5.0",
           "dependencies": {
+            "Iyzipay": {
+              "target": "Package",
+              "version": "[2.1.39, )"
+            },
             "Microsoft.AspNetCore.Authentication.Facebook": {
               "target": "Package",
               "version": "[5.0.1, )"

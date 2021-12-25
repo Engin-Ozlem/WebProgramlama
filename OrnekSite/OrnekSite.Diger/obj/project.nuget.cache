@@ -1,9 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "VnIDDv7EFo3xqWv1GgVHoDKaGTnxPpjszzWw1LU5GKIDOLEzBChljyvrYZNSBNzegwoX8KMePhjO4KhOLak5pA==",
+  "dgSpecHash": "P+vxOpC85+erVwSi3TnNx/tFwFNAeWaLfqg0VEgK7oJt72mTnRhK3h9OWEXQN8bss5eMAEjCDGjeSRnW3WQIyA==",
   "success": true,
   "projectFilePath": "C:\\Users\\engin\\Desktop\\OrnekSite\\OrnekSite.Diger\\OrnekSite.Diger.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\engin\\.nuget\\packages\\iyzipay\\2.1.39\\iyzipay.2.1.39.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.internal\\5.0.1\\microsoft.aspnetcore.cryptography.internal.5.0.1.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.cryptography.keyderivation\\5.0.1\\microsoft.aspnetcore.cryptography.keyderivation.5.0.1.nupkg.sha512",
     "C:\\Users\\engin\\.nuget\\packages\\microsoft.aspnetcore.identity.ui\\5.0.1\\microsoft.aspnetcore.identity.ui.5.0.1.nupkg.sha512",

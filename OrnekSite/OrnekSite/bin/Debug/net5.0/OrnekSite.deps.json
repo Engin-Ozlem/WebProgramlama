@@ -33,6 +33,7 @@
     ".NETCoreApp,Version=v5.0": {
       "OrnekSite/1.0.0": {
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Authentication.Facebook": "5.0.1",
           "Microsoft.AspNetCore.Authentication.Google": "5.0.1",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "5.0.11",
@@ -347,6 +348,20 @@
             "assemblyVersion": "2.8.0.0",
             "fileVersion": "2.8.26.1919"
           }
+        }
+      },
+      "Iyzipay/2.1.39": {
+        "dependencies": {
+          "Newtonsoft.Json": "13.0.1"
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {
+            "assemblyVersion": "2.1.39.0",
+            "fileVersion": "2.1.39.0"
+          }
+        },
+        "compile": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
         }
       },
       "Microsoft.AspNetCore.Antiforgery/2.2.0": {
@@ -2561,6 +2576,7 @@
       "OrnekSite.DataAccess/1.0.0": {
         "dependencies": {
           "Dapper": "2.0.123",
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "5.0.12",
           "Microsoft.EntityFrameworkCore.Relational": "5.0.12",
           "Microsoft.EntityFrameworkCore.SqlServer": "5.0.12",
@@ -2577,6 +2593,7 @@
       },
       "OrnekSite.Diger/1.0.0": {
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Identity.UI": "5.0.12",
           "Newtonsoft.Json": "13.0.1"
         },
@@ -2589,6 +2606,7 @@
       },
       "OrnekSite.Models/1.0.0": {
         "dependencies": {
+          "Iyzipay": "2.1.39",
           "Microsoft.AspNetCore.Mvc.ViewFeatures": "2.2.0",
           "Microsoft.Extensions.Identity.Stores": "5.0.12",
           "Newtonsoft.Json": "13.0.1"
@@ -4277,6 +4295,13 @@
       "sha512": "sha512-OiKusGL20vby4uDEswj2IgkdchC1yQ6rwbIkZDVBPIR6al2b7n3pC91elBul9q33KaBgRKhbZH3+2Ur4fnWx2A==",
       "path": "humanizer.core/2.8.26",
       "hashPath": "humanizer.core.2.8.26.nupkg.sha512"
+    },
+    "Iyzipay/2.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-e3NdsIBQuEWMfPHY5hqIorHqP5tldHwNSztdxwKKVgUe/ajtGlYFTthfdMARk4mkHkclvTsz4DI/V7xs3xJwJg==",
+      "path": "iyzipay/2.1.39",
+      "hashPath": "iyzipay.2.1.39.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Antiforgery/2.2.0": {
       "type": "package",

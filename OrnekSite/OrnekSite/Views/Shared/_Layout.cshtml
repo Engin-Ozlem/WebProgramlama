@@ -37,6 +37,9 @@
                                 <a class="nav-link" asp-area="Admin" asp-controller="User" asp-action="Index">Kullanıcılar</a>
                             </li>
                         }
+                        <li class="nav-item">
+                            <a class="nav-link" asp-area="Admin" asp-controller="Order" asp-action="Index">Siparişler</a>
+                        </li>
                         @if (HttpContextAccessor.HttpContext.Session.GetInt32(SD.ssShoppingCart) != null)
                         {
                             <li style="color:white">
@@ -52,7 +55,7 @@
                         {
                             <li style="color:white">
                                 <a href="/Identity/Account/Login" class="nav-link">
-                                    
+
                                     <i class="fas fa-shopping-cart"></i>&nbsp;(0) <!--sepette ürün yok ise 0 gelicektir-->
                                 </a>
                             </li>

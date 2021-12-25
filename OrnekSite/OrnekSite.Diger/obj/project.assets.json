@@ -2,6 +2,18 @@
   "version": 3,
   "targets": {
     "net5.0": {
+      "Iyzipay/2.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Newtonsoft.Json": "11.0.2"
+        },
+        "compile": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/Iyzipay.dll": {}
+        }
+      },
       "Microsoft.AspNetCore.Cryptography.Internal/5.0.1": {
         "type": "package",
         "compile": {
@@ -198,6 +210,20 @@
     }
   },
   "libraries": {
+    "Iyzipay/2.1.39": {
+      "sha512": "e3NdsIBQuEWMfPHY5hqIorHqP5tldHwNSztdxwKKVgUe/ajtGlYFTthfdMARk4mkHkclvTsz4DI/V7xs3xJwJg==",
+      "type": "package",
+      "path": "iyzipay/2.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "iyzipay.2.1.39.nupkg.sha512",
+        "iyzipay.nuspec",
+        "lib/net45/Iyzipay.dll",
+        "lib/netstandard1.3/Iyzipay.dll",
+        "lib/netstandard2.0/Iyzipay.dll"
+      ]
+    },
     "Microsoft.AspNetCore.Cryptography.Internal/5.0.1": {
       "sha512": "VGfj77RBkyWpPxvX6oSghE3DPObvg171HRdwr/t3aJQ9Y5cgaZE8BUNLhHZ0yBFa218r7e9Qou+DLGfRtve4CQ==",
       "type": "package",
@@ -555,6 +581,7 @@
   },
   "projectFileDependencyGroups": {
     "net5.0": [
+      "Iyzipay >= 2.1.39",
       "Microsoft.AspNetCore.Identity.UI >= 5.0.1",
       "Newtonsoft.Json >= 13.0.1"
     ]
@@ -598,6 +625,10 @@
       "net5.0": {
         "targetAlias": "net5.0",
         "dependencies": {
+          "Iyzipay": {
+            "target": "Package",
+            "version": "[2.1.39, )"
+          },
           "Microsoft.AspNetCore.Identity.UI": {
             "target": "Package",
             "version": "[5.0.1, )"
