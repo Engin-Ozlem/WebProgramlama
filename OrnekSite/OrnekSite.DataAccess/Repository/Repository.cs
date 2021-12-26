@@ -1,6 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using OrnekSite.DataAccess.Data;
 using OrnekSite.DataAccess.Repository.IRepository;
+using OrnekSite.Models;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,10 @@ namespace OrnekSite.DataAccess.Repository
             _db = db;
             this.dbSet = _db.Set<T>();
         }
-
+        public List<Product> SearchProduct(string q)
+        {
+            return _db.Products.Where(i => i.Title.Contains(q) || i.Description.Contains(q)).ToList(); // arama işlemi
+        }
         public void Add(T entity)
         {
             dbSet.Add(entity);

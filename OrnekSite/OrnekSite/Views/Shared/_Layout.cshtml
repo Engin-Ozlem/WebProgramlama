@@ -63,6 +63,11 @@
                         }
 
                     </ul>
+                    <form class="form-inline" action="/Customer/Home/Search" method="post"> <!--arama butonu-->
+                        <input name="q" type="text" class="form-control mr-2" placeholder="Arama"/>
+                        <button class="btn btn-success mr-0" type="submit">Ara</button>
+
+                    </form>
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -76,7 +81,7 @@
 
     <footer class="border-top footer text-white-50 bg-primary">
         <div class="container">
-            &copy; 2021 - OrnekSite
+            &copy; 
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

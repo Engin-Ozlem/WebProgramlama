@@ -10,5 +10,7 @@ namespace OrnekSite.DataAccess.Repository.IRepository
     public interface IProductRepository : IRepository<Product>
     {
         void Update(Product product);
+        List<Product> GetProductByCategory(int name);
+       
     }
 }

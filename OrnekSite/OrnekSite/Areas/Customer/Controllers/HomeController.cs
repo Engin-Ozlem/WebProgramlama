@@ -26,7 +26,20 @@ namespace OrnekSite.Areas.Customer.Controllers
             _logger = logger;
             _unitOfWork = unitOfWork;
         }
-
+        public IActionResult Search(string q)
+        {
+            if (!string.IsNullOrEmpty(q))
+            {
+                var products = _unitOfWork.Product.SearchProduct(q);
+                return View(products);
+            }
+            return View();
+        }
+        public IActionResult CategoryDetails(int? id) // category listelerini anasayfaya getirme işlemi
+        {
+            ViewBag.KategoriId = id;
+            return View();
+        }
         public IActionResult Index()
         {
             IEnumerable<Product> productList = _unitOfWork.Product.GetAll(includeProperties: "Category");

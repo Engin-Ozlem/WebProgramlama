@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OrnekSite.Models;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Linq.Expressions;
@@ -23,5 +24,6 @@ namespace OrnekSite.DataAccess.Repository.IRepository
         void Remove(int id);
         void Remove(T entity);
         void RemoveRange(IEnumerable<T> entity);
+        List<Product> SearchProduct(string q);
     }
 }

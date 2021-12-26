@@ -961,3 +961,8 @@ C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\bin\Debug\net5.0\Iyzipay.dll
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Order\Index.cshtml.g.cs
 C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Admin\Views\Order\Details.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Identity\Pages\Account\Manage\_ViewStart.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Components\CategoryList\Default.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\CategoryDetails.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Components\ProductList\Default.cshtml.g.cs
+C:\Users\engin\Desktop\OrnekSite\OrnekSite\obj\Debug\net5.0\Razor\Areas\Customer\Views\Home\Search.cshtml.g.cs

@@ -1,0 +1,17 @@
+﻿
+
+
+@model IEnumerable<OrnekSite.Models.Product>
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="row">
+
+    @await Component.InvokeAsync("CategoryList")
+    @await Component.InvokeAsync("ProductList", new { kategoriId = ViewBag.kategoriId })
+
+
+</div>
+
+

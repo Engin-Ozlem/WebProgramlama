@@ -1,4 +1,5 @@
-﻿using OrnekSite.DataAccess.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using OrnekSite.DataAccess.Data;
 using OrnekSite.DataAccess.Repository.IRepository;
 using OrnekSite.Models;
 using System;
@@ -33,6 +34,15 @@ namespace OrnekSite.DataAccess.Repository
                 nesne.CategoryId = product.CategoryId;
             }
 
+        }
+        public List<Product> GetProductByCategory(int id)
+        {
+            var product = _db.Products.AsQueryable();
+            if (id!=null)
+            {
+                product = product.Include(i => i.Category).Where(a => a.CategoryId == id);
+            }
+            return product.ToList();
         }
     }
 }
